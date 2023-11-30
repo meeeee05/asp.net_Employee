@@ -15,6 +15,7 @@ namespace WebApplication1.Models
         [Display(Name = "入社日")]
         [DataType(DataType.Date)]
         public DateTime HireDate { get; set; }
+
     }
 }
 
