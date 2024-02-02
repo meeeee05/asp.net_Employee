@@ -9,6 +9,13 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
+
+
+<form asp-controller="Employees" asp-action="Index" method="get">
+        <input type="text" name="strSerch" placeholder="エリア" />
+        <input type="submit" value="検索" />
+</form>
+
 <table class="table">
     <thead>
         <tr>
