@@ -40,22 +40,6 @@ namespace WebApplication1.Controllers
             return View(await employee.ToListAsync());
         }
 
-        //public async Task<IActionResult> Serch(string strSerch)
-        //{
-        //    //DBのデータを全件取得
-        //    var employee = from E in _context.Employee
-        //                   select E;
-
-        //    //検索欄に値が入っていれば、その値を検索
-        //    if (!String.IsNullOrEmpty(strSerch))
-        //    {
-        //        employee = employee.Where(e => e.Area.Contains(strSerch));
-        //    }
-
-        //    return View(await _context.Employee.ToListAsync());
-        //}
-
-
         // GET: Employees/Details/5
         public async Task<IActionResult> Details(int? id)
         {
